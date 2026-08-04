@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life Saver Blood Donation Program">
+    <meta name="keywords" content="Blood Donation, Donor, Blood Request">
+    <meta name="author" content="Student">
+ 
+    <title>Life Saver Blood Donation Program</title>
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+    <header>
+        <h1>Life Saver Blood Donation Program</h1>
+        <p>Donate Blood, Save Lives</p>
+    </header>
+ 
+    <main>
+ 
+        <article class="intro">
+            <h2>Welcome</h2>
+            <p>
+                Welcome to the Life Saver Blood Donation Program. Please register as a blood donor
+                or submit an emergency blood request using the forms below.
+            </p>
+        </article>
+ 
+        <section>
+ 
+            <h2>Blood Donor Registration Form</h2>
+ 
+            <form>
+ 
+                <fieldset>
+ 
+                    <legend>Donor Information</legend>
+ 
+                    <label>Full Name</label>
+                    <input type="text" name="fullname" required>
+ 
+                    <label>Age</label>
+                    <input type="number" name="age" min="18" max="65">
+ 
+                    <label>Gender</label>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+ 
+                    <label>Blood Group</label>
+                    <select name="bloodgroup">
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+ 
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone">
+ 
+                    <label>Email</label>
+                    <input type="email" name="email">
+ 
+                    <label>Address</label>
+                    <textarea name="address" rows="3"></textarea>
+ 
+                    <label>Last Donation Date</label>
+                    <input type="date" name="donationdate">
+ 
+                    <label>Health Condition</label>
+                    <textarea name="health" rows="3"></textarea>
+ 
+                </fieldset>
+ 
+                <button type="submit">Register</button>
+ 
+            </form>
+ 
+        </section>
+ 
+        <section>
+ 
+            <h2>Emergency Blood Request Form</h2>
+ 
+            <form>
+ 
+                <fieldset>
+ 
+                    <legend>Request Information</legend>
+ 
+                    <label>Patient Name</label>
+                    <input type="text" name="patient">
+ 
+                    <label>Required Blood Group</label>
+                    <select name="requiredgroup">
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+ 
+                    <label>Hospital Name</label>
+                    <input type="text" name="hospital">
+ 
+                    <label>Emergency Contact Number</label>
+                    <input type="tel" name="contact">
+ 
+                    <label>Required Date</label>
+                    <input type="date" name="date">
+ 
+                    <label>Additional Message</label>
+                    <textarea name="message" rows="4"></textarea>
+ 
+                </fieldset>
+ 
+                <button type="submit">Submit Request</button>
+ 
+            </form>
+ 
+        </section>
+ 
+        <section id="bloodTable">
+ 
+            <h2>Available Blood Groups</h2>
+ 
+            <table>
+ 
+                <tr>
+                    <th>Blood Group</th>
+                    <th>Registered Donors</th>
+                </tr>
+ 
+                <tr>
+                    <td>A+</td>
+                    <td>25</td>
+                </tr>
+ 
+                <tr>
+                    <td>A-</td>
+                    <td>8</td>
+                </tr>
+ 
+                <tr>
+                    <td>B+</td>
+                    <td>18</td>
+                </tr>
+ 
+                <tr>
+                    <td>B-</td>
+                    <td>6</td>
+                </tr>
+ 
+                <tr>
+                    <td>AB+</td>
+                    <td>10</td>
+                </tr>
+ 
+                <tr>
+                    <td>AB-</td>
+                    <td>4</td>
+                </tr>
+ 
+                <tr>
+                    <td>O+</td>
+                    <td>30</td>
+                </tr>
+ 
+                <tr>
+                    <td>O-</td>
+                    <td>9</td>
+                </tr>
+ 
+            </table>
+ 
+        </section>
+ 
+    </main>
+ 
+    <footer>
+        <p>&copy; 2026 Life Saver Blood Donation Program. All Rights Reserved.</p>
+    </footer>
+ 
+</body>
+ 
+</html>
+ 
