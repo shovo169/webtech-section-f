@@ -1,0 +1,53 @@
+<?php
+session_start();
+
+
+session_unset();
+
+
+session_destroy();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Logout Successful</title>
+
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Logout Successful</h2>
+
+<div class="info">
+
+<p>
+You have been successfully logged out.
+</p>
+
+<p>
+Your <strong>PHP Session</strong> has been destroyed.
+</p>
+
+</div>
+
+<div class="links">
+
+<a href="index.php">
+Back to Login
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
