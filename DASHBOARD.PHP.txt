@@ -1,0 +1,66 @@
+<?php
+session_start();
+
+
+if (!isset($_SESSION["username"])) {
+header("Location: index.php");
+exit();
+}
+
+
+$username = htmlspecialchars($_SESSION["username"]);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard - Session Demo</title>
+
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Welcome to Dashboard</h2>
+
+<div class="info">
+
+<p>
+Welcome,
+<strong><?php echo $username; ?></strong>
+</p>
+
+<p>
+Your username is currently stored in a
+<strong>PHP Session</strong>.
+</p>
+
+<p>
+You can view your saved cookie or logout from this page.
+</p>
+
+</div>
+
+<div class="links">
+
+<a href="cookie.php">
+View Cookie
+</a>
+
+<a href="logout.php">
+Logout
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
