@@ -1,0 +1,62 @@
+<?php
+
+if (isset($_COOKIE["remember_user"])) {
+
+
+$username = htmlspecialchars($_COOKIE["remember_user"]);
+
+} else {
+
+
+$username = "No cookie found";
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cookie Information</title>
+
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Cookie Information</h2>
+
+<div class="info">
+
+<p>
+Remembered Username:
+</p>
+
+<strong>
+<?php echo $username; ?>
+</strong>
+
+</div>
+
+<p>
+This username is retrieved from the
+<strong>browser cookie</strong>.
+</p>
+
+<div class="links">
+
+<a href="dashboard.php">
+Back to Dashboard
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
